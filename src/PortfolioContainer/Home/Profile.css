@@ -3,16 +3,18 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 10%;
+  /* height: 10%; */
   min-height: fit-content;
   /* background-image: url(); */
   background-color: #090b1a;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
-.profile-parent {
+/* .profile-parent {
   display: flex;
   align-items: center;
   color: aliceblue;
-}
+} */
 .profile-details-name {
   font-size: 24px;
   font-family: "Poppins SemiBold";
@@ -55,9 +57,10 @@
   justify-content: center;
   box-shadow: 0 1px 0 0 white;
   border-radius: 50%;
-  height: 380px;
-  width: 380px;
-  margin: 0 0 0 100px;
+  height: 375px;
+  width: 375px;
+
+  /* margin: 0 0 0 10px; */
 }
 .profile-picture-background {
   height: 92%;
@@ -66,8 +69,14 @@
   background-size: cover;
   border-radius: 50%;
   background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
 }
-
+.imgset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .profile-picture-background:hover {
   transform: scale(1.07);
   transition: 1s ease-out;
@@ -80,7 +89,20 @@
 .colz .colz-icon i:hover {
   transform: scale(1.5);
 }
-@media screen and (max-width: 1110px) {
+
+.main-text {
+  font-size: 80px;
+  font-weight: bold;
+  color: #ff5823;
+}
+.creative-text {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  font-family: "Poppins SemiBold";
+}
+
+/* @media screen and (max-width: 1110px) {
   .profile-picture {
     margin: 0 0 0 80px;
   }
@@ -128,3 +150,14 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .profile-picture {
+    height: 275px;
+    width: 275px;
+    margin-top: -90px;
+  }
+  .profile-details {
+    width: 90%;
+  }
+} */
