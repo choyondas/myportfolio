@@ -51,8 +51,8 @@ const MySkills = () => {
         <br />
         <br />
         <div className="row container2 mx-auto">
-          {fakeData.slice(0, 6).map((data) => (
-            <div className="col-lg-3 m-3 col-md-5 ">
+          {fakeData.slice(0, 8).map((data) => (
+            <div className="col-lg-2 m-3 col-md-5 ">
               <div class="card">
                 <div class="box">
                   <div class="percent">
