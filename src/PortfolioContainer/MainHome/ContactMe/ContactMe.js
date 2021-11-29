@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./ContactMe.css";
 const ContactMe = () => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleOnClose = () => setOpen(false);
+
+  const handleSubmit = () => {
+    alert("added successfully");
+  };
+
   function sentEmail(e) {
     e.preventDefault();
     emailjs
@@ -51,6 +59,7 @@ const ContactMe = () => {
                       <input
                         type="text"
                         name="name"
+                        id="name"
                         className="form-control"
                         placeholder="Your Name"
                       />
@@ -60,6 +69,7 @@ const ContactMe = () => {
                       <input
                         type="email"
                         name="user_email"
+                        id="email"
                         placeholder="Your Email"
                         className="form-control"
                       />
@@ -76,7 +86,15 @@ const ContactMe = () => {
                       />
                     </div>
                     <div class="app-form-group buttons">
-                      <input type="submit" name="" value="Submit" />
+                      <input
+                        className="m-3"
+                        type="submit"
+                        name=""
+                        value="Submit"
+                        onClick={handleSubmit}
+                      />
+
+                      <button type="reset">Reset</button>
                     </div>
                   </div>
                 </form>

@@ -59,7 +59,10 @@
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: #2a2b2f;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -68,8 +71,37 @@
   transition: 0.5s;
 }
 
+.container1 .card .box1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.815),
+      rgba(0, 0, 0, 0.534)
+    ),
+    url("https://i.ibb.co/C1CHZ66/dassland-watch.png");
+}
+
+.container1 .card .box2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(12, 11, 12, 0.479),
+      rgba(2, 2, 2, 0.87)
+    ),
+    url("https://i.ibb.co/v4GqnmW/Screenshot-2021-11-29-211637.png");
+}
+.container1 .card .box3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(12, 11, 12, 0.479),
+      rgba(0, 0, 0, 0.911)
+    ),
+    url("https://i.ibb.co/3F7pwgk/Screenshot-2021-11-29-213122.png");
+}
+
 .container1 .card .box:hover {
   transform: translateY(-50px);
+}
+
+.back-card-product {
 }
 
 .container1 .card .box:before {
@@ -92,7 +124,7 @@
   top: -10px;
   right: 30px;
   font-size: 8rem;
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(236, 228, 228, 0.212);
 }
 
 .container1 .card .box .content h3 {

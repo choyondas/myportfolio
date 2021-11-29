@@ -2,6 +2,15 @@
   background: #1a1919;
 }
 
+.skil-text {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+.skil-text:hover {
+  color: #ff5823;
+  cursor: pointer;
+}
 .container2 {
   position: relative;
 

@@ -47,7 +47,9 @@ const MySkills = () => {
   return (
     <div className="skill">
       <div className="container  p-4 ">
-        <h1>My Skils</h1>
+        <center>
+          <h1 className="skil-text">My Skils</h1>
+        </center>
         <br />
         <br />
         <div className="row container2 mx-auto">
