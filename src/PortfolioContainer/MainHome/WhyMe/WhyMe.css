@@ -1,3 +1,16 @@
-li{
-    list-style-type: none;
+.whyback {
+  background-color: #060811;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+.why-title {
+  font-size: 40px;
+}
+.main-why {
+  font-size: 40px;
+  padding: 30px;
 }

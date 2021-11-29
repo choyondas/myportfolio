@@ -11,6 +11,17 @@
   list-style-type: none;
   cursor: pointer;
 }
+.backPro {
+  background-color: #0e101a;
+}
+
+.backwork {
+  background-color: #090b1a;
+}
+.categaryBack {
+  background-color: #ff5823;
+  color: white;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 * {
