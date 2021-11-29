@@ -43,7 +43,7 @@ const ContactMe = () => {
                       <input
                         type="hidden"
                         name="_next"
-                        value="https://yourdomain.co/thanks.html"
+                        value="https://https://heuristic-lewin-f59498.netlify.app/thankyou.html"
                       />
                       <input
                         type="hidden"
