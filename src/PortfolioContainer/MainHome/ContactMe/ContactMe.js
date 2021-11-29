@@ -1,6 +1,22 @@
 import React from "react";
+import emailjs from "emailjs-com";
 import "./ContactMe.css";
 const ContactMe = () => {
+  function sentEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_k8q7eyf",
+        "template_klsqxvo",
+        e.target,
+        "user_RuWm0sqkqeCIfMyzyf4yw"
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }
+
   return (
     <div className="contact-back">
       <div className="container">
@@ -18,83 +34,56 @@ const ContactMe = () => {
                 <div class="screen-header-ellipsis"></div>
               </div>
             </div>
-            <form
-              action="https://formsubmit.co/choyondas08@gmail.com"
-              method="POST"
-            >
-              <div class="screen-body">
-                <div class="screen-body-item left">
-                  <div class="app-title">
-                    <span>CONTACT</span>
-                    <span>ME</span>
-                  </div>
-                  <div class="app-contact">CONTACT INFO : +8613085375070</div>
+
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>CONTACT</span>
+                  <span>ME</span>
                 </div>
-                <div class="screen-body-item">
+                <div class="app-contact">CONTACT INFO : +8613085375070</div>
+              </div>
+              <div class="screen-body-item">
+                <form onSubmit={sentEmail}>
                   <div class="app-form">
                     <div class="app-form-group">
+                      <label>Name</label>
                       <input
-                        class="app-form-control"
-                        placeholder="NAME"
-                        required
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Your Name"
                       />
                     </div>
                     <div class="app-form-group">
+                      <label>Email</label>
                       <input
-                        type="hidden"
-                        name="_next"
-                        value="https://https://heuristic-lewin-f59498.netlify.app/thankyou.js"
+                        type="email"
+                        name="user_email"
+                        placeholder="Your Email"
+                        className="form-control"
                       />
-                      <input
-                        type="hidden"
-                        name="_subject"
-                        value="New email   woooooo!"
-                      ></input>
                     </div>
 
-                    <div class="app-form-group">
-                      <input
-                        class="app-form-control"
-                        placeholder="EMAIL"
-                        required
-                      />
-                    </div>
-                    <div class="app-form-group">
-                      <input
-                        class="app-form-control"
-                        placeholder="CONTACT NO"
-                        required
-                      />
-                    </div>
-                    <div class="app-form-group message">
-                      <input
-                        class="app-form-control"
-                        placeholder="MESSAGE"
-                        required
+                    <div class="app-form-group ">
+                      <label>Message</label>
+                      <textarea
+                        placeholder="Message"
+                        name="message"
+                        type="text"
+                        rows="4"
+                        className="form-control"
                       />
                     </div>
                     <div class="app-form-group buttons">
-                      <button class="app-form-button m-2">CANCEL</button>
-                      <button class="app-form-button">SEND</button>
+                      <input type="submit" name="" value="Submit" />
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
-            </form>
+            </div>
           </div>
         </div>
-
-        {/* <div>
-          <h1>Hire Me.</h1>
-          <p>
-            I am available for freelance work. Connect with me via
-            phone:+8613085375070 or email: choyondas08@gmail.com
-          </p>
-        </div>
-
-        <div>
-          
-        </div> */}
       </div>
     </div>
   );

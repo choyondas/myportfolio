@@ -136,6 +136,9 @@ input {
 .app-form-group {
   margin-bottom: 15px;
 }
+label {
+  color: white;
+}
 
 .app-form-group.message {
   margin-top: 40px;
