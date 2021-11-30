@@ -171,3 +171,63 @@
   background: #fff;
   color: #000;
 }
+
+.blog-border {
+  width: 300px;
+  height: 300px;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-border::before {
+  content: "";
+  background-image: conic-gradient(#f5410a 20deg, transparent 120deg);
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+
+.blog-border::after {
+  width: 250px;
+  height: 250px;
+  background-image: url(https://neilpatel.com/wp-content/uploads/2017/08/blog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f74610;
+  font-size: larger;
+  letter-spacing: 5px;
+  box-shadow: inset 20px 20px 20px #0000008c;
+}
+
+.blog-border1::after {
+  content: "Blog 1";
+}
+.blog-border2::after {
+  content: "Blog 2";
+}
+.blog-border3::after {
+  content: "Blog 3";
+}
+.blog-border4::after {
+  content: "Blog 4";
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

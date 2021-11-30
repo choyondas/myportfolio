@@ -1,12 +1,12 @@
 import React from "react";
 import Typical from "react-typical";
-import PartiBackground from "../../PartiBackground";
+
 import "./Profile.css";
 const Profile = () => {
   return (
     <div className="profile-container p-5">
 
-<PartiBackground></PartiBackground>
+
 
       <div className="container">
         <div className="profile-parent row">

@@ -7,7 +7,10 @@
 }
 
 .contact-back {
-  background-color: #030511;
+  background: url("https://pakish.pk/wp-content/uploads/2018/05/website-login-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body,
@@ -24,14 +27,18 @@ input {
 }
 
 .container3 {
-  flex: 0 1 700px;
+  flex: 0 1 500px;
   margin: auto;
   padding: 10px;
+  max-width: 560px;
 }
 
 .screen {
   position: relative;
-  background: #181f44;
+  background: url("https://cutewallpaper.org/21/windows-7-login-screen-background/Best-50-Login-Backgrounds-on-HipWallpaper-Outlook-Login-.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 15px;
 }
 
@@ -52,7 +59,7 @@ input {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background: #3f3968;
+  background: #0c0e0f;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -237,5 +244,78 @@ label {
 
   .screen-body-item {
     padding: 0;
+  }
+}
+
+.submitbtn {
+  border: none;
+  background-color: #ff5823;
+  color: white;
+}
+.submitbtn1 {
+  border: none;
+}
+
+.btn-big {
+  border: none;
+  margin-right: 10px;
+  border-radius: 20px;
+  width: 80px;
+  margin-top: 10px;
+  background-color: #ff5823;
+}
+.btn-big1 {
+  border: none;
+  margin-right: 10px;
+  border-radius: 20px;
+  width: 80px;
+  margin-top: 10px;
+}
+.btn-big1:hover {
+  box-shadow: 2px 5px 10px gray;
+}
+.btn-big:hover {
+  box-shadow: 2px 5px 10px #22130f;
+}
+
+.bordertrans {
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bordertrans::before {
+  content: "";
+  background-image: conic-gradient(#f5410a 0deg, transparent 150deg);
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+
+.bordertrans::after {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f74610;
+  font-size: larger;
+  letter-spacing: 5px;
+  box-shadow: inset 10px 20px 20px #0000008c;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

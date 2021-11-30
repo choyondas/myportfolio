@@ -13,37 +13,17 @@ const Work = () => {
       </div>
 
       <section className="backwork p-5">
-        <div className="container ">
+        <div className="container  ">
+          <center>
+            <h1 className="skil-text p-4">Blogs</h1>
+          </center>
           <div className="row ">
-            <div className="col-lg-6 col-md-6 col-12 mb-4">
-              <img
-                className="img-fluid"
-                src="https://media.designrush.com/tinymce_images/79179/conversions/website-dimensions-content.jpg"
-                alt=""
-              />
+            <div className="col-lg-6 col-md-6 col-12 mb-4 blog-border blog-border1">
+              
             </div>
-
-            <div className="col-lg-6 col-md-6 col-12 mb-4">
-              <img
-                className="img-fluid"
-                src="https://media.designrush.com/tinymce_images/79179/conversions/website-dimensions-content.jpg"
-                alt=""
-              />
-            </div>
-            <div className="col-lg-6 col-md-6 col-12 mb-4">
-              <img
-                className="img-fluid"
-                src="https://media.designrush.com/tinymce_images/79179/conversions/website-dimensions-content.jpg"
-                alt=""
-              />
-            </div>
-            <div className="col-lg-6 col-md-6 col-12 mb-4">
-              <img
-                className="img-fluid"
-                src="https://media.designrush.com/tinymce_images/79179/conversions/website-dimensions-content.jpg"
-                alt=""
-              />
-            </div>
+            <div className="col-lg-6 col-md-6 col-12 mb-4 blog-border blog-border2"></div>
+            <div className="col-lg-6 col-md-6 col-12 mb-4 blog-border blog-border3"></div>
+            <div className="col-lg-6 col-md-6 col-12 mb-4 blog-border blog-border4"></div>
           </div>
         </div>
       </section>

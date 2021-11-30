@@ -1,15 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import emailjs from "emailjs-com";
 import "./ContactMe.css";
 const ContactMe = () => {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleOnClose = () => setOpen(false);
-
-  const handleSubmit = () => {
-    alert("added successfully");
-  };
-
   function sentEmail(e) {
     e.preventDefault();
     emailjs
@@ -21,15 +13,25 @@ const ContactMe = () => {
       )
       .then((res) => {
         console.log(res);
+        e.target.reset();
       })
       .catch((err) => console.log(err));
+    e.target.value = "";
+  }
+
+  let form = document.getElementById("f");
+
+  function myFunction() {
+    if (form?.checkValidity()) {
+      alert("Message sent Succesfully!");
+    }
   }
 
   return (
     <div className="contact-back">
-      <div className="container">
-        <div class="container3">
-          <div class="screen">
+      <div className="container ">
+        <div class="container3 bordertrans ">
+          <div class="screen ">
             <div class="screen-header">
               <div class="screen-header-left">
                 <div class="screen-header-button close"></div>
@@ -52,7 +54,7 @@ const ContactMe = () => {
                 <div class="app-contact">CONTACT INFO : +8613085375070</div>
               </div>
               <div class="screen-body-item">
-                <form onSubmit={sentEmail}>
+                <form id="f" onSubmit={sentEmail}>
                   <div class="app-form">
                     <div class="app-form-group">
                       <label>Name</label>
@@ -62,6 +64,18 @@ const ContactMe = () => {
                         id="name"
                         className="form-control"
                         placeholder="Your Name"
+                        required
+                      />
+                    </div>
+                    <div class="app-form-group">
+                      <label>Subject</label>
+                      <input
+                        type="text"
+                        name="subject"
+                        id="subject"
+                        placeholder="Subject"
+                        className="form-control"
+                        required
                       />
                     </div>
                     <div class="app-form-group">
@@ -72,6 +86,18 @@ const ContactMe = () => {
                         id="email"
                         placeholder="Your Email"
                         className="form-control"
+                        required
+                      />
+                    </div>
+                    <div class="app-form-group">
+                      <label>Phone Number</label>
+                      <input
+                        type="number"
+                        name="phone"
+                        id="phone"
+                        placeholder="Your Phone"
+                        className="form-control"
+                        required
                       />
                     </div>
 
@@ -83,19 +109,22 @@ const ContactMe = () => {
                         type="text"
                         rows="4"
                         className="form-control"
+                        required
                       />
                     </div>
-                    <div class="app-form-group buttons">
+
+                    <button className="btn-big" onClick={myFunction}>
                       <input
-                        className="m-3"
+                        className="m-3 submitbtn"
                         type="submit"
                         name=""
                         value="Submit"
-                        onClick={handleSubmit}
                       />
+                    </button>
 
-                      <button type="reset">Reset</button>
-                    </div>
+                    <button className="btn-big1">
+                      <input className="m-3 submitbtn1" type="reset" />
+                    </button>
                   </div>
                 </form>
               </div>
