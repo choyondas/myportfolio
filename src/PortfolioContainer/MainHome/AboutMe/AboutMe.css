@@ -11,10 +11,7 @@
 /* test */
 
 /*TODO: clean it all up, finish flex, add aesthetics, icons, redefine to be relative to vh-vw, maybe rework v2 variant using scss and frames and real transitions? */
-html body {
-  background-color: black;
-  margin: 0 0 0 0;
-}
+
 .infocardContainer * {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 300;
@@ -143,4 +140,10 @@ a:hover {
 
 .textWrap {
   overflow-wrap: break-word;
+}
+
+.about {
+  background-image: url("https://i.stack.imgur.com/Bokmq.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

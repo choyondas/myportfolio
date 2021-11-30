@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Work.css";
 const Work = () => {
   return (
@@ -42,7 +43,10 @@ const Work = () => {
                     also see the products available on our website. If they want
                     to purchase the products they have to Register.
                   </p>
-                  <a href="#">Read More</a>
+
+                  <NavLink to="/projects">Read More</NavLink>
+
+                  {/* <a href="#">Read More</a> */}
                 </div>
               </div>
             </div>
