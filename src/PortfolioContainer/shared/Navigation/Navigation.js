@@ -11,8 +11,10 @@ const Navigation = () => {
           class="slide-toggle"
         />
         <label for="slide-item-1">
-          <i class="fas fa-home icon"></i>
-          <span>Home</span>
+          <a href="#home">
+            <i class="fas fa-home icon"></i>
+            <span>Home</span>
+          </a>
         </label>
 
         <input
@@ -22,8 +24,9 @@ const Navigation = () => {
           class="slide-toggle"
         />
         <label for="slide-item-2">
-          <p class="icon">★</p>
-          <span>Bolgs</span>
+          <a href="#blogs">
+            <p class="icon">★</p> <span>Bolgs</span>
+          </a>
         </label>
 
         <input
@@ -33,8 +36,10 @@ const Navigation = () => {
           class="slide-toggle"
         />
         <label for="slide-item-3">
-          <i class="fas fa-user icon"></i>
-          <span>About</span>
+          <a href="#about">
+            <i class="fas fa-user icon"></i>
+            <span>About</span>
+          </a>
         </label>
 
         <input
@@ -44,8 +49,11 @@ const Navigation = () => {
           class="slide-toggle"
         />
         <label for="slide-item-4">
+          
+          <a href="#contact">
           <p class="icon">✎</p>
-          <span>Contact</span>
+            <span>Contact</span>
+          </a>
         </label>
 
         <div class="clear"></div>

@@ -28,7 +28,7 @@ const ContactMe = () => {
   }
 
   return (
-    <div className="contact-back">
+    <div id="contact" className="contact-back">
       <div className="container ">
         <div class="container3 bordertrans ">
           <div class="screen ">

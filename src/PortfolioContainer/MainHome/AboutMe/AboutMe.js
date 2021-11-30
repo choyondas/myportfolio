@@ -2,7 +2,7 @@ import React from "react";
 import "./AboutMe.css";
 const AboutMe = () => {
   return (
-    <div className="container">
+    <div id="about" className="container">
       <center>
         {" "}
         <h2 className="skil-text p-5"> Profile</h2>

@@ -12,15 +12,13 @@ const Work = () => {
         </ul>
       </div>
 
-      <section className="backwork p-5">
+      <section id="blogs" className="backwork p-5">
         <div className="container  ">
           <center>
             <h1 className="skil-text p-4">Blogs</h1>
           </center>
           <div className="row ">
-            <div className="col-lg-6 col-md-6 col-12 mb-4 blog-border blog-border1">
-              
-            </div>
+            <div className="col-lg-6 col-md-6 col-12 mb-4 blog-border blog-border1"></div>
             <div className="col-lg-6 col-md-6 col-12 mb-4 blog-border blog-border2"></div>
             <div className="col-lg-6 col-md-6 col-12 mb-4 blog-border blog-border3"></div>
             <div className="col-lg-6 col-md-6 col-12 mb-4 blog-border blog-border4"></div>
