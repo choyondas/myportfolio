@@ -60,7 +60,7 @@ const Work = () => {
                     Users can buy food on this website. If they want to
                     purchase, they have to register or login.
                   </p>
-                  <a href="#">Read More</a>
+                  <NavLink to="/projects">Read More</NavLink>
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@ const Work = () => {
                     They can contact our specialized doctors. They can book a
                     hospital ticket.
                   </p>
-                  <a href="#">Read More</a>
+                  <NavLink to="/projects">Read More</NavLink>
                 </div>
               </div>
             </div>

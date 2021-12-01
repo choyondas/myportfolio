@@ -1,5 +1,4 @@
 .container5 {
-  position: absolute;
   height: 300px;
   width: 600px;
   top: 60px;
@@ -99,4 +98,29 @@ svg {
 .card2:hover .stroke {
   stroke-dashoffset: 100;
   transition: 0.6s ease-out;
+}
+
+.padPro {
+  margin-top: 90px;
+}
+
+.bg-pro {
+  color: white;
+  background-image: url("https://wallpapercave.com/wp/0fmVLId.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bottomPro {
+  display: flex;
+}
+.highlighted-btn1 {
+  margin: 0 0 0 28px;
+  background-color: white;
+}
+.highlighted-btn1:hover {
+  margin: 0 0 0 28px;
+  background-color: cornsilk;
+  color: rgb(233, 165, 165);
 }
