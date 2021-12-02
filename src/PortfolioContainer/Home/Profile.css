@@ -6,10 +6,18 @@
   /* height: 10%; */
   min-height: fit-content;
   /* background-image: url(); */
-  background-color: #090b1a;
+  background-image: url("https://i.pinimg.com/originals/e1/cf/5d/e1cf5def07484612099f3def58a8e79f.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   padding-top: 30px;
   padding-bottom: 40px;
 }
+
+.particleuse {
+}
+
 /* .profile-parent {
   display: flex;
   align-items: center;
@@ -101,4 +109,3 @@
   color: white;
   font-family: "Poppins SemiBold";
 }
-

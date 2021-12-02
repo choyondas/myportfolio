@@ -63,7 +63,7 @@ const Projects = () => {
             <h2 className="skil-text">My Projects</h2>
           </center>
           {projects.map((project) => (
-            <div>
+            <div className="container">
               <h2 className="mt-5 pt-3">Project No: {project.id}</h2>
               <div class="container5 padPro" key={project.id}>
                 <div class="card2">

@@ -12,11 +12,14 @@
   cursor: pointer;
 }
 .backPro {
-  background-color: #0e101a;
+  background-image: url("https://cdn.wallpapersafari.com/77/89/ms3kKF.jpg");
 }
 
 .backwork {
-  background-color: #090b1a;
+  background-image: url("http://www.pngmagic.com/product_images/landing-page-banner-background-sm.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .categaryBack {
   background-color: #ff5823;
