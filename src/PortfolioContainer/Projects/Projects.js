@@ -57,14 +57,14 @@ const Projects = () => {
       <div className="container p-5">
         <div>
           <center>
-            <h2 className="skil-text">My Projects</h2>
+            <h2 className="description">My Projects</h2>
           </center>
           {projects.map((project) => (
             <div className="container">
               <h2 className="mt-5 pt-3">Project No: {project.id}</h2>
               <div class="container5 padPro" key={project.id}>
                 <div class="card2">
-                  <img src={project.img1} alt="" />
+                  <img className="img-fluid" src={project.img1} alt="" />
                   <h3 class="title"></h3>
                 </div>
               </div>
@@ -86,16 +86,12 @@ const Projects = () => {
                 {project.AdminFunction}
               </p>
 
-              <a
-                style={{ color: "white" }}
-                target="_blank"
-                href={project.client}
-              >
+              <a target="_blank" href={project.client}>
                 {" "}
                 Client Side link
               </a>
               <a
-                style={{ color: "white", marginLeft: "20px" }}
+                style={{ marginLeft: "20px" }}
                 target="_blank"
                 href={project.server}
               >
@@ -103,7 +99,7 @@ const Projects = () => {
                 Server Side link
               </a>
               <a
-                style={{ color: "white", marginLeft: "20px" }}
+                style={{ marginLeft: "20px" }}
                 target="_blank"
                 href={project.live}
               >
