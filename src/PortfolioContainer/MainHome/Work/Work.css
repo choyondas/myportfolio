@@ -13,6 +13,9 @@
 }
 .backPro {
   background-image: url("https://cdn.wallpapersafari.com/77/89/ms3kKF.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .backwork {

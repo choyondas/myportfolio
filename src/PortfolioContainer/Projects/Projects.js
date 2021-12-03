@@ -6,9 +6,8 @@ const Projects = () => {
     {
       id: "1",
       name: "Dassland watch Store",
-      img1: "https://i.ibb.co/YWz9QWH/dass2.png",
-      img2: "https://i.ibb.co/jfgBd1H/dassland-watch2.png",
-      img3: "https://i.ibb.co/rGD5YJz/Screenshot-2021-12-01-013126.png",
+      img1: "https://i.ibb.co/47Y5Yz1/Screenshot-2021-12-03-152134.png",
+
       summery: `Users can visit our website without registering, they can also see the products available on our website. If they want to purchase the products they have to
         Register. All the information of the user will be stored in the database.`,
       details: "",
@@ -23,9 +22,8 @@ const Projects = () => {
     {
       id: "2",
       name: "Fast Food Delivery Websitee",
-      img3: "https://i.ibb.co/mbzD7Z4/Screenshot-2021-12-01-133352.png",
-      img2: "https://i.ibb.co/FW2RP7J/Screenshot-2021-12-01-133238.png",
-      img1: "https://i.ibb.co/ccmQZnG/Screenshot-2021-11-29-211637.png",
+
+      img1: "https://i.ibb.co/Y7KC5FX/Screenshot-2021-12-03-160554.png",
       summery: `Users can buy food on this website. If they want to purchase, they have to register or login. After registering users can see their name on the navigation bar and also the logout button.`,
       details: "",
       technology: "React, React Bootstrap, Node, MongoDB, Firebase, Express",
@@ -39,9 +37,8 @@ const Projects = () => {
     {
       id: "3",
       name: "Health Care Hospital",
-      img1: "https://i.ibb.co/447psz0/Screenshot-2021-12-01-134245.png",
-      img2: "https://i.ibb.co/kHsRG9Q/Screenshot-2021-11-29-213122.png",
-      img3: "https://i.ibb.co/tmJK33b/Screenshot-2021-12-01-134423.png",
+      img1: "https://i.ibb.co/TqWxt2J/Screenshot-2021-12-03-163047.png",
+
       summery: `People can know the recent information about our hospital. They can contact
       our specialized doctors. They can book a hospital ticket.`,
       details: "",
@@ -67,34 +64,8 @@ const Projects = () => {
               <h2 className="mt-5 pt-3">Project No: {project.id}</h2>
               <div class="container5 padPro" key={project.id}>
                 <div class="card2">
-                  <img src={project.img2} alt="" />
-                  <h3 class="title"></h3>
-
-                  <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="stroke" cx="60" cy="80" r="30" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card2">
-                  <img src={project.img3} alt="" />
-                  <h3 class="title"></h3>
-
-                  <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="stroke" cx="60" cy="80" r="30" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card2">
                   <img src={project.img1} alt="" />
                   <h3 class="title"></h3>
-
-                  <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="stroke" cx="60" cy="80" r="30" />
-                    </svg>
-                  </div>
                 </div>
               </div>
               <h2>{project.name}</h2>
